@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
       <SectionTitle
-        eyebrow="03 / Technical stack"
+        eyebrow="04 / Technical stack"
         title="Tools I work with"
         text="A practical stack across application development, infrastructure, data and engineering fundamentals."
       />

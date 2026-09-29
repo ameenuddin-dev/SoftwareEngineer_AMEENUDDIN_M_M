@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="contact-orb absolute -right-20 -top-20 h-52 w-52 rounded-full bg-cyan-300/10 blur-3xl" />
         <div className="relative">
           <p className="font-mono text-xs uppercase tracking-[.2em] text-cyan-300">
-            04 / Contact
+            05 / Contact
           </p>
           <h2 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-6xl">
             Let's build something reliable.

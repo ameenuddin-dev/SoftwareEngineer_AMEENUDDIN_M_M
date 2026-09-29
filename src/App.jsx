@@ -8,6 +8,7 @@ import Impact from "./components/Impact";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useScrollProgress } from "./hooks/useScrollProgress";
+import Certificates from "./components/Certificates";
 
 export default function App() {
   const progress = useScrollProgress();
@@ -20,6 +21,7 @@ export default function App() {
         <Hero />
         <Experience />
         <Projects />
+        <Certificates />
         <Skills />
         <Impact />
         <Contact />

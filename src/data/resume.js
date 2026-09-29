@@ -11,7 +11,14 @@ export const resume = {
   resumePath: "/resume/Ameenuddin_M_M_Resume.pdf",
 };
 
-export const nav = ["About", "Experience", "Projects", "Skills", "Contact"];
+export const nav = [
+  "About",
+  "Experience",
+  "Projects",
+  "Skills",
+  "Certificates",
+  "Contact",
+];
 
 export const skills = [
   {
@@ -174,4 +181,95 @@ export const metrics = [
   { value: "20%+", label: "latency reduction" },
   { value: "99.5%", label: "availability" },
   { value: "3", label: "engineering roles" },
+];
+
+export const certificates = [
+  {
+    title: "Software Development Engineer Intern",
+    company: "Deal Amaze Solutions",
+    date: "Sept 2025 — May 2026",
+
+    stack: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "REST APIs",
+      "Socket.IO",
+      "JavaScript",
+    ],
+
+    description:
+      "Worked on full-stack web applications using the MERN stack, developing responsive React.js interfaces, Node.js and Express.js REST APIs, MongoDB data workflows, authentication, and real-time application features.",
+
+    certificate:
+      "/certificates/Intership Appreciation Certificate - Ameenuddin (1).pdf",
+  },
+  {
+    title: "Java Full Stack Developer Trainee",
+    company: "QSpiders",
+    date: "Jan 2025 — Sept 2025",
+
+    stack: [
+      "Java",
+      "Spring Boot",
+      "Spring MVC",
+      "Hibernate",
+      "JPA",
+      "REST APIs",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js",
+      "MySQL",
+      "SQL",
+      "AWS",
+      "Git",
+      "Postman",
+    ],
+
+    description:
+      "Completed intensive Java Full Stack Developer training with hands-on learning in Core Java, OOP, Collections, Exception Handling, Multithreading, JDBC, SQL, Hibernate, JPA, Spring, Spring Boot, Spring MVC and REST API development. Built frontend applications using HTML, CSS, JavaScript and React.js, while working with MySQL for relational data management. Gained practical exposure to application deployment and cloud fundamentals using AWS services including EC2 and S3, along with Git, GitHub and Postman for version control and API testing.",
+
+    highlights: [
+      "Developed backend applications using Java and Spring Boot.",
+      "Built and tested RESTful APIs using Spring MVC and Postman.",
+      "Worked with Hibernate and JPA for database integration.",
+      "Designed and optimized SQL queries using MySQL.",
+      "Built responsive frontend interfaces using HTML, CSS, JavaScript and React.js.",
+      "Learned AWS cloud fundamentals with hands-on exposure to EC2 and S3.",
+      "Used Git and GitHub for source-code management and project collaboration.",
+    ],
+
+    certificate: "/certificates/Java Full Stack Course Certifacate (1).pdf",
+  },
+  {
+    title: "Machine Learning with Python Trainee",
+    company: "Abeyaantrix Softlab",
+    date: "Sept 2022 — Dec 2022",
+
+    stack: [
+      "Python",
+      "Machine Learning",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Scikit-learn",
+      "Jupyter Notebook",
+    ],
+
+    description:
+      "Completed hands-on training in Machine Learning with Python, covering data preprocessing, exploratory data analysis, feature engineering, supervised and unsupervised learning, model training, evaluation and data visualization. Worked with Python libraries including NumPy, Pandas, Matplotlib and Scikit-learn to analyze datasets, build machine learning models and evaluate their performance.",
+
+    highlights: [
+      "Performed data cleaning and preprocessing using Python and Pandas.",
+      "Analyzed datasets using exploratory data analysis and visualization techniques.",
+      "Implemented supervised learning algorithms using Scikit-learn.",
+      "Worked with classification and regression models.",
+      "Applied feature selection and basic feature engineering techniques.",
+      "Evaluated models using appropriate performance metrics.",
+      "Used Jupyter Notebook for experimentation, analysis and model development.",
+    ],
+    certificate: "/certificates/MLP INTERNSHIP.pdf",
+  },
 ];
