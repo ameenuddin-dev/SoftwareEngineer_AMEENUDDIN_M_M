@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color-scheme: dark;
+  font-synthesis: none;
+}
+html {
+  scroll-behavior: smooth;
+  background: #070a12;
+  scroll-padding-top: 84px;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #070a12;
+  color: #e8edf7;
+  overflow-x: hidden;
+}
+::selection {
+  background: #67e8f9;
+  color: #071019;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  z-index: 100;
+  background: linear-gradient(90deg, #67e8f9, #a78bfa);
+  box-shadow: 0 0 14px rgba(103, 232, 249, 0.7);
+  transition: width 0.08s linear;
+}
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.055) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+.noise {
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+.glass {
+  background: rgba(12, 17, 29, 0.68);
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  backdrop-filter: blur(18px);
+}
+.glow {
+  box-shadow: 0 0 80px rgba(34, 211, 238, 0.12);
+}
+.gradient-text {
+  background: linear-gradient(110deg, #fff 10%, #67e8f9 50%, #a78bfa 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.orb {
+  filter: blur(1px);
+  box-shadow: 0 0 90px rgba(34, 211, 238, 0.2);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -7px;
+  height: 1px;
+  background: #67e8f9;
+  transition: right 0.25s ease;
+}
+.nav-link:hover::after {
+  right: 0;
+}
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease;
+}
+.mobile-menu.open {
+  max-height: 360px;
+  opacity: 1;
+}
+
+.hero-copy {
+  animation: heroIn 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.hero-card-wrap {
+  animation: heroCardIn 1s 0.12s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.floating-card {
+  animation: floatCard 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+.icon-orbit {
+  animation: iconFloat 3.5s ease-in-out infinite;
+}
+.pulse-dot {
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+.skill-bar {
+  transform-origin: left;
+  animation: skillLoad 1.5s 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.project-card,
+.experience-card,
+.skill-card,
+.impact-panel,
+.contact-panel {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.project-card:hover,
+.experience-card:hover,
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(103, 232, 249, 0.2);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+}
+.skill-pill {
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+.skill-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(103, 232, 249, 0.08);
+  color: #c9f8ff;
+}
+.stat-card {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05);
+}
+.magnetic {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+.magnetic:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+.contact-panel {
+  animation: contactGlow 5s ease-in-out infinite;
+}
+.contact-orb {
+  animation: contactOrb 7s ease-in-out infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: revealUp 0.8s var(--delay, 0ms) cubic-bezier(0.2, 0.8, 0.2, 1)
+    forwards;
+  animation-timeline: view();
+  animation-range: entry 8% cover 28%;
+}
+
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes heroCardIn {
+  from {
+    opacity: 0;
+    transform: translate3d(35px, 25px, 0) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateX(1deg);
+  }
+}
+@keyframes iconFloat {
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(4deg) translateY(-2px);
+  }
+}
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 8px #67e8f9;
+  }
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 18px #67e8f9;
+  }
+}
+@keyframes skillLoad {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes contactGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(34, 211, 238, 0);
+  }
+  50% {
+    box-shadow: 0 20px 80px rgba(34, 211, 238, 0.05);
+  }
+}
+@keyframes contactOrb {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-20px, 18px) scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@keyframes toast-progress {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.toast-progress {
+  animation: toast-progress 4s linear forwards;
+}
