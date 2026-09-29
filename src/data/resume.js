@@ -8,7 +8,7 @@ export const resume = {
   linkedin: "https://www.linkedin.com/",
   github: "https://github.com/",
   location: "Bangalore Karnataka, India",
-  resumePath: "/resume/Ameenuddin_M_M_Resume.pdf",
+  resumePath: "/resume/Ameenuddin_m_m_SoftwareEngineer.pdf",
 };
 
 export const nav = [
