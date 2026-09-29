@@ -51,10 +51,10 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="magnetic rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950"
+              className="magnetic inline-flex items-center rounded-full border border-cyan-300/15 bg-cyan-300/5 px-5 py-3 text-sm font-semibold text-cyan-200 hover:bg-cyan-300/10"
             >
               Contact
-              <ArrowUpRight className="ml-1 inline h-4 w-4" />
+              <Mail className="ml-1 h-4 w-4" />
             </a>
             <a
               href={resume.resumePath}

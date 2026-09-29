@@ -103,8 +103,8 @@ export const experience = [
     date: "Sept 2025 — May 2026",
     role: "Software Development Engineer Intern",
     points: [
-      "Developed full-stack applications using Java, Spring Boot, React.js and REST APIs with JWT authentication.",
-      "Optimized SQL queries and implemented JUnit testing, improving application performance and reliability.",
+      "Developed full-stack web applications using the MERN stack (MongoDB, Express.js, React.js and Node.js) and REST APIs.",
+      "Implemented backend APIs, database workflows and responsive React.js interfaces to deliver reliable application features.",
     ],
   },
   {
