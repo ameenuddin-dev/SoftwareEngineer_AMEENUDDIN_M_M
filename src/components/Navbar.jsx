@@ -12,7 +12,7 @@ export default function Navbar() {
       <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-[#070a12]/75 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="#top" className="font-mono text-sm font-bold tracking-tight">
-            <span className="text-cyan-300">AMENUDDIN</span>
+            <span className="text-cyan-300">AMEENUDDIN</span>
             <span className="text-white/50"> </span>
             <span className="text-cyan-300">M M</span>
           </a>
