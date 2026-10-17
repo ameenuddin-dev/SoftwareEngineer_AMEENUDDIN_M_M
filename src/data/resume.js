@@ -49,6 +49,13 @@ export const skills = [
       "JWT",
       "Hibernate",
       "JPA",
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Streamlit",
+      "Jupyter Notebook",
     ],
   },
   {
