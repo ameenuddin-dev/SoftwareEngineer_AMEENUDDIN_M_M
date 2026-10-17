@@ -8,7 +8,7 @@ export const resume = {
   linkedin: "https://www.linkedin.com/",
   github: "https://github.com/",
   location: "Bangalore Karnataka, India",
-  resumePath: "/resume/Ameenuddin_m_m_SoftwareEngineer_7-10-2026.pdf",
+  resumePath: "/resume/Ameenuddinmm_SoftwareEngineer.pdf",
 };
 
 export const nav = [
@@ -173,6 +173,23 @@ export const projects = [
     image: "/preview/Gotruck.png",
     text: "Built a transportation platform for truck bookings and shipment requirements, backed by Express APIs, MongoDB and AWS EC2 deployment.",
     link: "https://www.gotruks.com/",
+  },
+  {
+    name: "Diabetes Prediction",
+    type: "Machine Learning",
+    stack: [
+      "Python",
+      "Jupyter Notebook",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Matplotlib",
+      "Seaborn",
+      "Streamlit",
+    ],
+    image: "/preview/DiabeticPrediction.png",
+    text: "Developed a machine learning-based diabetes prediction system using Python and Scikit-learn to analyze patient health data and predict diabetes risk. Built an interactive web application with Streamlit for user-friendly predictions and data visualization.",
+    link: "[https://diabetes-prediction-ameenuddinmm.streamlit.app/](https://diabetes-prediction-ameenuddinmm.streamlit.app/)",
   },
 ];
 
