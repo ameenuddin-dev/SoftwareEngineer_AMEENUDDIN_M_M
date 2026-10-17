@@ -189,7 +189,7 @@ export const projects = [
     ],
     image: "/preview/DiabeticPrediction.png",
     text: "Developed a machine learning-based diabetes prediction system using Python and Scikit-learn to analyze patient health data and predict diabetes risk. Built an interactive web application with Streamlit for user-friendly predictions and data visualization.",
-    link: "[https://diabetes-prediction-ameenuddinmm.streamlit.app/](https://diabetes-prediction-ameenuddinmm.streamlit.app/)",
+    link: "https://diabetes-prediction-ameenuddinmm.streamlit.app/",
   },
 ];
 
